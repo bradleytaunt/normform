@@ -1,0 +1,181 @@
+/******************************************
+/* RESET FORM ELEMENTS / DEFAULTS
+******************************************/
+fieldset, form, label, legend, input, select, textarea, option {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+/* NORMFORM CSS
+******************************************/
+/* Shared styles */
+form.normform label,
+form.normform input,
+form.normform textarea,
+form.normform select {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+}
+form.normform input,
+form.normform textarea,
+form.normform .select-dropdown,
+form.normform .select-listed {
+    margin-bottom: 20px;
+}
+
+/* Fieldset */
+form.normform fieldset {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    margin: 20px 0;
+    padding: 20px 20px 0;
+}
+
+/* Legend */
+form.normform legend {
+    color: lightgrey;
+    font-size: 12px;
+    padding:  0 10px;
+    text-transform: uppercase;
+}
+
+/* Labels */
+form.normform label {
+    margin-bottom: 5px;
+}
+
+/* Inputs / Textareas / Buttons */
+form.normform input,
+form.normform textarea,
+form.normform select {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    outline: none;
+    padding: 10px 15px;
+    -ms-transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+form.normform input:focus,
+form.normform textarea:focus,
+form.normform select:focus {
+    border-color: #1386D0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+}
+
+/* Invalid errors */
+form.normform input:invalid:not(:focus):not(:placeholder-shown) {
+    background: pink;
+    border-color: red;
+}
+form.normform input:invalid:focus:not(:placeholder-shown) ~ .requirements {
+    max-height: 150px;
+    padding: 0 0 30px;
+}
+form.normform .requirements {
+    color: red;
+    font-style: italic;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    -ms-transition: .28s;
+    -webkit-transition: .28s;
+    transition: .28s;
+}
+
+/* Successful inputs */
+form.normform input:valid {
+    background: url('checkmark.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    padding-right: 40px;
+    -ms-transition: none;
+    -webkit-transition: none;
+    transition: none;
+}
+
+/* Select Default Styles */
+form.normform select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* Select Dropdown */
+form.normform .select-dropdown {
+    display: block;
+    position: relative;
+}
+form.normform .select-dropdown:after {
+    background: none;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    content: '';
+    display: block;
+    height: 6px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    width: 6px;
+}
+
+/* Radio Buttons & Checkboxes */
+form.normform input[type=checkbox], form.normform input[type=radio],
+form.normform label.checkbox-label, form.normform label.radio-label {
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+}
+form.normform input[type=checkbox],
+form.normform input[type=radio] {
+    margin-right: 5px;
+}
+
+/* Submit & reset buttons */
+form.normform input[type=submit],
+form.normform input[type=reset] {
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 12px 15px;
+    position: relative;
+    text-align: right;
+    -ms-transition: .3s all;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+    width: auto;
+    top: 0;
+}
+form.normform input[type=submit]:hover,
+form.normform input[type=reset]:hover {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+    top: -2px;
+}
+form.normform input[type="submit"] {
+    background: #1386D0;
+    border-color: #1386D0;
+    color: white;
+}
+form.normform input[type="reset"] {
+    background: white;
+    border-color: lightgrey;
+    color: grey;
+}
