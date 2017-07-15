@@ -95,7 +95,10 @@ form.normform .requirements {
 }
 
 /* Successful inputs */
-form.normform input:valid {
+form.normform input[type=text]:valid,
+form.normform input[type=email]:valid,
+form.normform input[type=password]:valid,
+form.normform input[type=number]:valid {
     background: url('checkmark.svg');
     background-size: 20px;
     background-repeat: no-repeat;
