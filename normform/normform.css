@@ -161,6 +161,9 @@ form.normform input[type=reset] {
     -ms-transition: .3s all;
     -webkit-transition: .3s all;
     transition: .3s all;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: auto;
     top: 0;
 }
