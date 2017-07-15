@@ -25,6 +25,72 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/LICENSE",
+		"oF": 0
+		},
+	"\/normform.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/normform.zip",
+		"oF": 0
+		},
+	"\/normform\/checkmark.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/normform\/checkmark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/normform\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/normform\/index.html",
+		"oF": 0
+		},
+	"\/normform\/normform-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/normform\/normform-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/normform\/normform.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/normform\/normform-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/README.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/styles.css": {
 		"aP": 1,
 		"bl": 0,

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Normform</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="normform/normform.css">
+    <link rel="stylesheet" href="normform/normform-min.css">
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
 
     <div class="intro-container">
         <h1>A tiny CSS plugin to make your web forms beautiful again.</h1>
-        <a href="" class="button download">Download</a>
+        <a href="https://bradleytaunt.github.io/normform/normform.zip" class="button download">Download</a>
         <a href="#demo" class="button">View demo</a>
         <hr>
     </div>
@@ -47,6 +48,9 @@
                     <input type="number" id="number-input" required value="" tabindex="4" placeholder="12345678...">
                     <div class="requirements">Please use numerical values only.</div>
                 </div>
+
+                <label for="range-input">Range Input:</label>
+                <input type="range" id="range-input" tabindex="5">
             </fieldset>
 
             <fieldset>
@@ -65,11 +69,11 @@
 
             <fieldset>
                 <legend>Radio Button Examples</legend>
-                <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="3" value="choice-1">
+                <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="6" value="choice-1">
                 <label class="radio-label" for="radio-choice-1">Choice 1</label><br>
-                <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="4" value="choice-2">
+                <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="7" value="choice-2">
                 <label class="radio-label" for="radio-choice-2">Choice 2</label><br>
-                <input type="radio" name="radio-choice" id="radio-choice-3" tabindex="5" value="choice-3">
+                <input type="radio" name="radio-choice" id="radio-choice-3" tabindex="8" value="choice-3">
                 <label class="radio-label" for="radio-choice-3">Choice 3</label>
             </fieldset>
 
