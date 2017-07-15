@@ -1,0 +1,122 @@
+//- Imports / Variables
+@import '_reset'
+
+cLightGrey = #737373
+cLightBlue = #E3E8FF
+cBlue      = #002CFC
+cBlack     = #313131
+cYellow    = #FEFDED
+
+//- General styles
+*
+    box-sizing: border-box
+    
+html, body
+    display: block
+    height: 100%
+    position: relative
+    width: 100%
+    
+body
+    background: cYellow
+    font-family: 'Karla', 'Helvetica', sans-serif
+    margin: 40px 0
+    
+a,a:visited
+    color: cLightGrey
+    text-decoration: none
+    
+hr
+    background: rgba(0,0,0,0.1)
+    border: 0
+    height: 1px
+    margin: 100px 0 80px
+    width: 100%
+    
+h3.heading
+    font-size: 30px
+    font-weight: bold
+    margin: 0 0 40px 0
+    text-align: center
+
+//- Header
+header
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+    display: block
+    margin: 0 auto
+    max-width: 600px
+    padding: 20px
+    width: 100%
+    
+    img.logo
+    h2
+        display: inline-block
+        vertical-align: middle
+    
+    img.logo
+        width: 150px
+        
+    h2
+        color: cLightGrey
+        font-size: 14px
+        text-align: right
+        width: calc(100% - 160px)
+        
+//- Intro Container
+.intro-container
+    display: block
+    margin: 0 auto
+    max-width: 600px
+    padding: 20px
+    width: 100%
+    
+    h1
+        color: cBlack
+        font-size: 18px
+        margin: 60px 0
+        text-align: center
+        
+    a.button
+        background: white
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1)
+        display: block
+        font-size: 40px
+        font-weight: bold
+        margin: 0 0 10px
+        padding: 30px
+        text-align: center
+        transition: .3s background
+        width: 100%
+        
+        &:hover
+            background: cLightBlue
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1)
+            color: cBlue
+            
+//- Demo Container
+.demo-container
+    background: white
+    border-radius: 5px
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1)
+    display: block
+    margin: 0 auto
+    max-width: 600px
+    padding: 15px 25px 25px
+    width: 100%
+    
+footer
+    border-top: 1px solid rgba(0,0,0,0.1)
+    display: block
+    margin: 60px auto 0
+    max-width: 600px
+    padding: 40px
+    width: 100%
+    
+    p
+        font-size: 14px
+        line-height: 25px
+        text-align: center
+        
+        a,a:visited
+            color: cBlue
+            text-decoration: underline

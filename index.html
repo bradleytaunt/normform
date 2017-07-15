@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Normform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../normform.css">
+</head>
+<body>
+    <header>
+        <img src="images/normform-logo.svg" alt="Normform" class="logo">
+        <h2>Minimal form CSS</h2>
+    </header>
+
+    <div class="intro-container">
+        <h1>A minimal CSS file to make your web forms beautiful again.</h1>
+        <a href="" class="button download">Download</a>
+        <a href="#demo" class="button">View demo</a>
+        <hr>
+    </div>
+
+    <h3 class="heading" id="demo">Form Demo</h3>
+
+    <div class="demo-container">
+        <form action="#" method="post" class="normform">
+
+            <fieldset>
+                <legend>Input Examples</legend>
+
+                <label for="text-input">Text Input:</label>
+                <input type="text" id="text-input" value="" tabindex="1" required placeholder="Text input content...">
+
+                <div>
+                    <label for="email-input">Email Input:</label>
+                    <input type="email" id="email-input" value="" required tabindex="2" placeholder="normform@norform.com">
+                    <div class="requirements">Must be a valid email address</div>
+                </div>
+
+                <div>
+                    <label for="password-input">Password Input:</label>
+                    <input type="password" id="password-input" required  value="" tabindex="3" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Secure password">
+                    <div class="requirements">Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.</div>
+                </div>
+
+                <div>
+                    <label for="number-input">Number Input:</label>
+                    <input type="number" id="number-input" required value="" tabindex="4" placeholder="12345678...">
+                    <div class="requirements">Please use numerical values only.</div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select Option Examples</legend>
+
+                <label for="select-choice-2">Dropdown Select Choice:</label>
+                <div class="select-dropdown">
+                    <select name="select-choice-2" id="select-choice">
+                        <option value="Choice 1">Choice 1</option>
+                        <option value="Choice 2">Choice 2</option>
+                        <option value="Choice 3">Choice 3</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Radio Button Examples</legend>
+                <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="3" value="choice-1">
+                <label class="radio-label" for="radio-choice-1">Choice 1</label><br>
+                <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="4" value="choice-2">
+                <label class="radio-label" for="radio-choice-2">Choice 2</label><br>
+                <input type="radio" name="radio-choice" id="radio-choice-3" tabindex="5" value="choice-3">
+                <label class="radio-label" for="radio-choice-3">Choice 3</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Checkbox Examples</legend>
+                <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                <label class="checkbox-label" for="checkbox-1">Checkbox 1</label><br>
+                <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                <label class="checkbox-label" for="checkbox-2">Checkbox 2</label><br>
+                <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                <label class="checkbox-label" for="checkbox-3">Checkbox 3</label><br>
+                <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                <label class="checkbox-label" for="checkbox-4">Checkbox 4</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Textarea Examples</legend>
+
+                <label for="textarea">Textarea:</label>
+                <textarea rows="8" name="textarea" id="textarea"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Sign up">
+            <input type="reset" value="Cancel">
+
+        </form>
+    </div>
+
+    <footer>
+        <p>This is a <a href="http://bradleytaunt.com">Bradley Taunt</a> joint. You can find me on <a href="https://dribbble.com/bradleytaunt">Dribbble</a>, <a href="https://github.com/bradleytaunt">Github</a> &amp; <a href="https://twitter.com/bradtaunt">Twitter</a></p>
+    </footer>
+</body>
+</html>
