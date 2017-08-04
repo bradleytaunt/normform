@@ -4,6 +4,8 @@
 
 Normform: A tiny CSS plugin to make your web forms beautiful again
 
+### [Check out the demo](http://hustle.pizza/normform/)
+
 ### [Download the source files](https://github.com/bradleytaunt/normform/blob/master/normform.zip)
 
 ## How to use
