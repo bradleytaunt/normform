@@ -4,104 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Normform</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700" rel="stylesheet">
+    <meta name="description" content="A pure CSS form plugin to make your forms beautiful again">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="normform/normform-min.css">
+    <link rel="stylesheet" href="normform/normform.min.css">
 </head>
 <body>
+
     <header>
-        <img src="images/normform-logo.svg" alt="Normform" class="logo">
-        <h2>Minimal form CSS</h2>
+        <h1><span class="blue">Normform</span> <span class="white">2.0</span></h1>
+        <h3>
+            Simplify your forms
+            <span>Pure CSS form plugin (6KB) | <a href="https://raw.githubusercontent.com/bradleytaunt/normform/master/normform/normform.min.css">Download</a> | <a href="https://github.com/bradleytaunt/normform">Docs</a></span>
+        </h3>
     </header>
 
-    <div class="intro-container">
-        <h1>A tiny CSS plugin to make your web forms beautiful again.</h1>
-        <a href="https://bradleytaunt.github.io/normform/normform.zip" class="button download">Download</a>
-        <a href="#demo" class="button">View demo</a>
-        <a href="https://github.com/bradleytaunt/normform" class="button">View on Github</a>
-        <hr>
-    </div>
+    <div class="main-container">
 
-    <h3 class="heading" id="demo">Form Demo</h3>
+        <div class="text-container">
+            <h3 class="heading">Headache-free setup</h3>
+            <p>Implementing Normform into your site or web app is incredibly easy:</p>
+            <ol>
+                <li><a href="https://raw.githubusercontent.com/bradleytaunt/normform/master/normform/normform.min.css">Download the minified CSS</a> off Github</li>
+                <li>Include <code>normform.min.css</code> in your project</li>
+                <li>Add the <code>normform</code> class to your form element</li>
+                <li>Profit!</li>
+            </ol>
+        </div>
 
-    <div class="demo-container">
-        <form action="#" method="post" class="normform">
+        <div class="demo-container">
+            <form action="#" method="post" class="normform">
 
-            <fieldset>
-                <legend>Input Examples</legend>
+                <fieldset>
+                    <legend>Default Input Examples</legend>
 
-                <label for="text-input">Text Input: (required)</label>
-                <input type="text" id="text-input" value="" tabindex="1" required placeholder="Text input content...">
+                    <label for="text-input">Text Input:</label>
+                    <input type="text" id="text-input" value="" placeholder="Text input content...">
 
-                <div>
-                    <label for="email-input">Email Input: (required)</label>
-                    <input type="email" id="email-input" value="" required tabindex="2" placeholder="normform@norform.com">
-                    <div class="requirements">Must be a valid email address</div>
+                    <label for="email-input">Email Input:</label>
+                    <input type="email" id="email-input" value="" placeholder="normform@norform.com">
+
+                    <label for="select-choice-2">Dropdown Select Choice:</label>
+                    <div class="select-dropdown">
+                        <select name="select-choice-2" id="select-choice">
+                            <option value="Choice 1">Choice 1</option>
+                            <option value="Choice 2">Choice 2</option>
+                            <option value="Choice 3">Choice 3</option>
+                        </select>
+                    </div>
+
+                    <input type="checkbox" name="checkbox-0" id="checkbox-0">
+                    <label for="checkbox-0">Yes, I think Normform is cool!</label>
+
+                </fieldset>
+
+                <div class="inline-buttons">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Sign up">
                 </div>
 
-                <div>
-                    <label for="password-input">Password Input: (required)</label>
-                    <input type="password" id="password-input" required  value="" tabindex="3" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Secure password">
-                    <div class="requirements">Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.</div>
+            </form>
+        </div>
+
+        <div class="text-container">
+            <h3 class="heading">Custom defaults</h3>
+            <p>All form elements have been completely customized without sacrificing performance or accessibility. This includes:</p>
+            <ul>
+                <li>fieldsets</li>
+                <li>legends</li>
+                <li>radios</li>
+                <li>checkboxes</li>
+                <li>select dropdowns</li>
+                <li>specialized inputs</li>
+                <li>textareas</li>
+                <li>input buttons</li>
+            </ul>
+            <p>Check out the <a href="https://github.com/bradleytaunt/normform">official documentation</a> to see how to properly setup these elements.</p>
+        </div>
+
+        <div class="demo-container">
+            <form action="#" method="post" class="normform">
+
+                <fieldset>
+                    <legend>Select Option Examples</legend>
+
+                    <label for="select-choice-2">Dropdown Select Choice:</label>
+                    <div class="select-dropdown">
+                        <select name="select-choice-2" id="select-choice">
+                            <option value="Choice 1">Choice 1</option>
+                            <option value="Choice 2">Choice 2</option>
+                            <option value="Choice 3">Choice 3</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Radio Button Examples</legend>
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked>
+                    <label for="radio-choice-1">Choice 1</label>
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2">
+                    <label for="radio-choice-2">Choice 2</label>
+                    <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3">
+                    <label for="radio-choice-3">Choice 3</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Checkbox Examples</legend>
+                    <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                    <label for="checkbox-1">Checkbox 1</label>
+                    <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                    <label for="checkbox-2">Checkbox 2</label>
+                    <input type="checkbox" name="checkbox-3" id="checkbox-3" checked>
+                    <label for="checkbox-3">Checkbox 3</label>
+                    <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                    <label for="checkbox-4">Checkbox 4</label>
+                </fieldset>
+
+                <div class="inline-buttons">
+                    <input type="reset" value="Cancel">
+                    <input type="submit" value="Sign up">
                 </div>
 
-                <div>
-                    <label for="number-input">Number Input: (required)</label>
-                    <input type="number" id="number-input" required value="" tabindex="4" placeholder="12345678...">
-                    <div class="requirements">Please use numerical values only.</div>
-                </div>
+            </form>
+        </div>
 
-                <label for="range-input">Range Input:</label>
-                <input type="range" id="range-input" tabindex="5">
-            </fieldset>
+        <div class="text-container">
+            <h3 class="heading">Baked-in error styling</h3>
+            <p>Error handling and required form elements are supported right out of the box.</p>
+            <p>Want to give a detailed description to accompany the error itself? Check out the <a href="https://github.com/bradleytaunt/normform">official documentation</a> about easily adding a requirements descriptor.</p>
+        </div>
 
-            <fieldset>
-                <legend>Select Option Examples</legend>
+        <div class="demo-container">
+            <form action="#" method="post" class="normform">
 
-                <label for="select-choice-2">Dropdown Select Choice:</label>
-                <div class="select-dropdown">
-                    <select name="select-choice-2" id="select-choice">
-                        <option value="Choice 1">Choice 1</option>
-                        <option value="Choice 2">Choice 2</option>
-                        <option value="Choice 3">Choice 3</option>
-                    </select>
-                </div>
+                <fieldset>
+                    <legend>Required Input Examples</legend>
 
-            </fieldset>
+                    <label for="text-input">Text Input:</label>
+                    <input type="text" id="text-input" value="" required placeholder="Text input content...">
 
-            <fieldset>
-                <legend>Radio Button Examples</legend>
-                <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="6" value="choice-1">
-                <label class="radio-label" for="radio-choice-1">Choice 1</label><br>
-                <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="7" value="choice-2">
-                <label class="radio-label" for="radio-choice-2">Choice 2</label><br>
-                <input type="radio" name="radio-choice" id="radio-choice-3" tabindex="8" value="choice-3">
-                <label class="radio-label" for="radio-choice-3">Choice 3</label>
-            </fieldset>
+                    <div>
+                        <label for="email-input">Email Input:</label>
+                        <input type="email" id="email-input" value="" required placeholder="normform@norform.com">
+                        <div class="requirements">Must be a valid email address</div>
+                    </div>
 
-            <fieldset>
-                <legend>Checkbox Examples</legend>
-                <input type="checkbox" name="checkbox-1" id="checkbox-1">
-                <label class="checkbox-label" for="checkbox-1">Checkbox 1</label><br>
-                <input type="checkbox" name="checkbox-2" id="checkbox-2">
-                <label class="checkbox-label" for="checkbox-2">Checkbox 2</label><br>
-                <input type="checkbox" name="checkbox-3" id="checkbox-3">
-                <label class="checkbox-label" for="checkbox-3">Checkbox 3</label><br>
-                <input type="checkbox" name="checkbox-4" id="checkbox-4">
-                <label class="checkbox-label" for="checkbox-4">Checkbox 4</label><br>
-            </fieldset>
+                    <div>
+                        <label for="password-input">Password Input:</label>
+                        <input type="password" id="password-input" required  value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Secure password">
+                        <div class="requirements">Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.</div>
+                    </div>
 
-            <fieldset>
-                <legend>Textarea Examples</legend>
+                    <div>
+                        <label for="number-input">Number Input:</label>
+                        <input type="number" id="number-input" value="" placeholder="12345678..." required>
+                        <div class="requirements">Only number values can be used.</div>
+                    </div>
 
-                <label for="textarea">Textarea:</label>
-                <textarea rows="8" name="textarea" id="textarea"></textarea>
-            </fieldset>
+                    <label for="textarea">Textarea:</label>
+                    <textarea rows="8" name="textarea" id="textarea" required></textarea>
 
-            <input type="submit" value="Sign up">
-            <input type="reset" value="Cancel">
+                </fieldset>
 
-        </form>
+                <input type="submit" value="Sign up">
+
+            </form>
+        </div>
+
     </div>
 
     <footer>
