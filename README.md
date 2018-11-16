@@ -3,7 +3,7 @@
 Normform: A tiny CSS plugin to make your web forms beautiful again
 Form plugin (6KB)
 
-### [Check out the demo](http://bradleytaunt.com/normform/)
+### [Check out the demos](http://normform.surge.sh/)
 
 ## How to use
 
