@@ -140,7 +140,22 @@ header
     display: block
     margin: 0 auto 120px
     padding: 15px 25px 25px
+    position: relative
     width: 50%
+
+    &:after
+        background: cBlue
+        border-radius: 5px
+        content:''
+        height: 100%
+        position: absolute
+        width: 100%
+        z-index: -1
+
+    &:after
+        opacity: 0.1
+        right: -15px
+        top: 15px
 
 footer
     border-top: 1px solid rgba(0,0,0,0.1)
