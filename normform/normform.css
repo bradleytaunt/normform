@@ -93,9 +93,6 @@ form.normform input[type=radio] + label {
     border-radius: 5px;
     outline: none;
     padding: 10px 15px;
-    -ms-transition: .3s ease all;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all;
 }
 form.normform input:required,
 form.normform textarea:required,
@@ -103,10 +100,11 @@ form.normform select:required {
     border-left: 5px solid #EFADB5;
 }
 form.normform input:focus,
+form.normform input[type=checkbox]:focus + label,
+form.normform input[type=radio]:focus + label,
 form.normform textarea:focus,
 form.normform select:focus, {
     border-color: var(--nf-main-color);
-    border-left: 5px solid var(--nf-main-color);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
 }
 
@@ -203,7 +201,8 @@ form.normform input[type=checkbox] + label:after {
     content: '✓';
     display: none;
     font-size: 14px;
-    left: 12px;
+    font-weight: bold;
+    left: 11px;
     position: absolute;
     text-shadow: 0 1px 2px rgba(0,0,0,0.4);
     top: calc(50% - 10px);
@@ -223,6 +222,10 @@ form.normform input[type=radio] + label:after {
 form.normform input[type=radio]:checked + label:after {
     display: block;
 }
+form.normform input[type=checkbox]:focus + label,
+form.normform input[type=radio]:focus + label {
+    border-color: var(--nf-main-color);
+}
 form.normform input[type=checkbox]:checked + label,
 form.normform input[type=radio]:checked + label {
     background: var(--nf-main-color-faded);
@@ -240,8 +243,8 @@ form.normform input[type=checkbox],
 form.normform input[type=radio] {
     margin-right: 5px;
     position: absolute;
-    visibility: hidden;
     width: auto;
+    z-index: -1;
 }
 
 /* Submit & reset buttons */
@@ -253,9 +256,6 @@ form.normform input[type=reset] {
     margin: 0;
     padding: 12px 15px;
     position: relative;
-    -ms-transition: .3s all;
-    -webkit-transition: .3s all;
-    transition: .3s all;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -265,6 +265,12 @@ form.normform input[type=reset] {
 form.normform input[type=submit]:hover,
 form.normform input[type=reset]:hover {
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+form.normform input[type=submit]:focus {
+    border-color: rgba(0,0,0,0.6);
+}
+form.normform input[type=reset]:focus {
+    border-color: var(--nf-main-color);
 }
 form.normform input[type="submit"] {
     background: var(--nf-main-color);
